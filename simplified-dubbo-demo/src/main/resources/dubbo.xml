@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.lmmmowi.simplified.dubbo.spring.ServiceAnnotationBeanPostProcessor">
+    <bean class="com.lmmmowi.simplified.dubbo.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor">
         <property name="toScanPackages">
             <set>
                 <value>demo.provider</value>

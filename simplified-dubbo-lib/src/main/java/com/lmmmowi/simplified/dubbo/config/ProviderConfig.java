@@ -29,6 +29,8 @@ public class ProviderConfig extends AbstractConfig {
             protocols = new ArrayList<>();
             ProtocolConfig protocolConfig = new ProtocolConfig();
             protocolConfig.setName(Constants.LOCAL_PROTOCOL);
+            protocolConfig.setHost("localhost");
+            protocolConfig.setPort(1);
             protocols.add(protocolConfig);
         }
 

@@ -1,6 +1,7 @@
 package demo;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import demo.config.DubboConfiguration;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
  * @Author: mowi
@@ -10,7 +11,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SimplifiedDubboDemo {
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("dubbo.xml");
+//        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("dubbo.xml");
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(DubboConfiguration.class);
         applicationContext.start();
     }
 }

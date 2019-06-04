@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;
 /**
  * @Author: mowi
  * @Date: 2019-05-30
- * @Description:
+ * @Description: 直接继承Spring的ClassPathBeanDefinitionScanner，目的是为了暴露checkCandidate方法，因为该方法是protect，无法被外部类调用
  */
 public class DubboClassPathBeanDefinitionScanner extends ClassPathBeanDefinitionScanner {
 
